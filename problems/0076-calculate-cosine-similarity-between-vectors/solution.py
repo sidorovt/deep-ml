@@ -9,15 +9,13 @@ def cosine_similarity(v1, v2):
     Returns:
         The cosine_similarity of the two vectors.
     """
-    if v1 is not None and v2 is not None:
-        if len(v1) == len(v2):
-            dot_product = np.dot(v1, v2)
-            norm_v1, norm_v2 = np.sqrt(sum(x**2 for x in v1)), np.sqrt(sum(x**2 for x in v2))
-            if norm_v1 == 0 or norm_v2 == 0:
-                return "Vectors cannot have zero magnitude"
-            result = dot_product/(norm_v1*norm_v2)
-            return result
-        else:
-            return "Vectors must be the same shape"
-    else:
-        return "Vectors cannot be empty or have zero magnitude"
+    if v1.size == 0 or v2.size == 0:
+        return "Vectors cannot be empty"
+    if v1.shape != v2.shape:
+        return "Vectors cannot have different shape"
+
+    # norm_v1, norm_v2 = np.sqrt(sum(x**2 for x in v1)), np.sqrt(sum(x**2 for x in v2))
+    norm_v1, norm_v2 = np.linalg.norm(v1), np.linalg.norm(v2)
+    if norm_v1 == 0 or norm_v2 == 0:
+        return "Vectors cannot have zero magnitude"
+    return np.dot(v1, v2)/(norm_v1*norm_v2)
