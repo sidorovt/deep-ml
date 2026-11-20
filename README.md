@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**5** solved · 5 problems · 0 labs · 0 math
+**6** solved · 6 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -17,6 +17,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Descriptive Statistics Calculator](https://www.deep-ml.com/problems/78) | easy | 2026-11-20 | [solution](problems/0078-descriptive-statistics-calculator) |
 | [Dot Product Calculator](https://www.deep-ml.com/problems/83) | easy | 2026-11-19 | [solution](problems/0083-dot-product-calculator) |
 | [Calculate Eigenvalues of a Matrix](https://www.deep-ml.com/problems/6) | medium | 2026-11-19 | [solution](problems/0006-calculate-eigenvalues-of-a-matrix) |
+| [Normal Distribution PDF Calculator](https://www.deep-ml.com/problems/80) | medium | 2026-11-20 | [solution](problems/0080-normal-distribution-pdf-calculator) |
 
 ---
 
